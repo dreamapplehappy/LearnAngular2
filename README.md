@@ -1,3 +1,3 @@
 ### 学习ng2的路线
 
-+ 1 >>> qwe
++ 1 angular2-quickstart
