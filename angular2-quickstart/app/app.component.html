@@ -1,0 +1,30 @@
+
+<h1>#3</h1>
+<use-template-syntax></use-template-syntax>
+
+<h1>#2</h1>
+<hero-form></hero-form>
+<h1>#1</h1>
+<h1>{{title}}</h1>
+<h2>My favorite hero is: {{myHero.name}}</h2>
+<ul>
+    <li *ngFor="let hero of heroLists">{{hero.name}}</li>
+</ul>
+<p *ngIf="heroLists.length > 3">There are more heros</p>
+
+<div class="section">
+    <h3>click-me</h3>
+    <click-me></click-me>
+</div>
+<div class="section">
+    <h3>key-up</h3>
+    <key-up></key-up>
+</div>
+<div class="section">
+    <h3>loop-back</h3>
+    <loop-back></loop-back>
+</div>
+<div class="section">
+    <h3>enter-key-up</h3>
+    <enter-key-up></enter-key-up>
+</div>

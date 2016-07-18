@@ -1,0 +1,54 @@
+<ul>
+    <li>
+        <h4 class="attention">HTML</h4>
+        <p>This is a sample HTML</p>
+    </li>
+    <li>
+        <h4 class="attention">插值表达式</h4>
+        <p>{{msg2}}</p>
+        <p>{{msg2 + method2() + '...'}}</p>
+    </li>
+    <li>
+        <h4 class="attention">模板表达式</h4>
+        <p>{{1 + 1}} | {{1 > 2}}</p>
+    </li>
+    <li>
+        <h4 class="attention">表达式上下文</h4>
+        <p>它们被局限于只能访问来自表达式上下文中的成员</p>
+        <p></p>
+    </li>
+    <li>
+        <h4 class="attention">模板语句</h4>
+        <p (click)="clickMe(); temp = 'cool , 我在摸板语句里面!'">里面使用的是模板语句, click me {{temp}}</p>
+    </li>
+    <li>
+        <h4 class="attention">绑定语法</h4>
+        <ul>
+            <li>
+                <h4 class="attention">单向从数据源到视图目标</h4>
+                <p>{{temp1}}</p>
+                <input type="checkbox" [disabled]="dis1"> hello
+                <input type="radio" bind-disabled="dis1"> hello
+            </li>
+            <li>
+                <h4 class="attention">单向从视图目标到数据源</h4>
+                <button (click)="clickMe()">click me</button>
+                <button on-click="clickMe()">click me</button>
+            </li>
+            <li>
+                <h4 class="attention">双向</h4>
+                <input type="text" [(ngModel)]="name" #hello>
+                <p>{{name}} | {{hello.value}}</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4 class="attention">属性绑定</h4>
+        <img [src]="imgUrl" alt="">
+        <button [disabled]="dis1">disabled</button>
+        <p [ngClass]="propClass">绑定[ngClass]</p>
+    </li>
+    <li>
+        <h4 class="attention"></h4>
+    </li>
+</ul>
